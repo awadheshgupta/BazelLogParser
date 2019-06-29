@@ -1,0 +1,6 @@
+bazel-out/k8-fastbuild/bin/abc/def/_virtual_includes/def
+bazel-out/k8-fastbuild/abc/xyz/_virtual_includes/xyz
+bazel-out/k8-fastbuild/bin/abc/def/_virtual_includes/def
+bazel-out/k8-fastbuild/abc/xyz/_virtual_includes/xyz
+bazel-out/k8-fastbuild/bin/abc/def/_virtual_includes/def
+bazel-out/k8-fastbuild/abc/xyz/_virtual_includes/xyz

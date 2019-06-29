@@ -14,6 +14,7 @@ import file_parser.bazelLogParser
 import common.argumentParse
 import os
 
+# Main method to execute.
 def main():
     #scriptLocation = os.path.dirname(os.path.realpath(__file__))
     #print(scriptLocation)

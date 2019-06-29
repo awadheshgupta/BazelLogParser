@@ -10,14 +10,17 @@ Responsible for:
 """
 import os
 
+#To Parge log as per defined business logic.
 def logParser(inputFile,outputPath):
     searchString = "_virtual_includes"
     interList = []
     finalList = []
+    # checking if file exists and valid
     if os.path.isfile(inputFile) and os.path.getsize(inputFile) <= 0:
         print("Error : File doesn't exists or invalid !!!")
         return 1
     try:
+        #Opening file 
         with open(inputFile, "r") as fileRead:
             for line in fileRead:
                 val = line.split(";")
@@ -33,10 +36,12 @@ def logParser(inputFile,outputPath):
     # print the contents of list
     scriptLocation = os.path.dirname(os.path.realpath(__file__))
     IntermediateFile =  scriptLocation +"/../data/Intermediate.txt"
+    #Writing List to file
     with open(IntermediateFile, 'w') as filehandle:  
         for listitem in interList:
             filehandle.write('%s\n' % listitem)
     FinalFile =  scriptLocation +"/../data/Final.txt"
+    #Writing List to file
     with open(FinalFile, 'w') as filehandle:  
         for listitem in finalList:
             filehandle.write('%s\n' % listitem)

@@ -9,7 +9,7 @@ Responsible for:
 
 import argparse
 
-
+#To get input parameter from user.
 def argumentParse():
     parser = argparse.ArgumentParser(description='Description of your program')
     parser.add_argument('-i','--input', help='Input file path', required=True)

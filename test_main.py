@@ -18,6 +18,7 @@ import os
 class LogParserTest(unittest.TestCase): 
   
     # test if input file doesn't exists 
+    # Test
     def test_logParser_if_filedoesnotexists(self):
         out=file_parser.bazelLogParser.logParser("input","Test/value")
         self.assertEqual(out,1)
